@@ -23,7 +23,11 @@ function performAction() {
     getData(baseUrl, zipInput, apiKey).then(function(data){
       // console.log(data);
       // Add data to post request
-      postData('/add', {date: d, temp: data.list[0].main.temp, content: feelingsInput});
+      postData('/add', {
+        date: d,
+        temp: data.list[0].main.temp,
+        content: feelingsInput
+      });
       updateUI();
     });
   }
