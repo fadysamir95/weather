@@ -29,7 +29,7 @@ const server = app.listen(port, listening);
 // Call back to debug
 function listening(){
   console.log("server running");
-  console.log(`running on localhost: {$port}`);
+  console.log(`running on localhost: ${port}`);
 }
 
 // Initialize all route with a callback function
